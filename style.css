@@ -592,6 +592,15 @@ footer .footer-section {
   padding-top: 5px;
 }
 
+#form-message {
+  font-size: 16px;
+  font-weight: bold;
+  color: green;
+  background: #e1f8e7;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
 
 
 .f-icons a {

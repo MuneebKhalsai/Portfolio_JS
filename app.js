@@ -66,21 +66,3 @@ function animateservicesection(){
   const tl = gsap.timeline({defaults:{duration:3}});
   tl.fromTo('.services-card',{y:-100,opacity:0},{y:0,opacity:1});
 }
-// ========================================================
-// ---------------Submit Form detail in Email--------------
-// ========================================================
-let modal = document.getElementById("modal");
-const scripturl='https://script.google.com/macros/s/AKfycbzNE3ddYwUcAChs_vvXFjZJ5byUWPh2aat-WUTC6zIim9A_HEFp1sOxYcQn3C_0zic6Rg/exec';
-const form = document.forms['contact-form']
-form.addEventListener('submit',e => {
-  e.preventDefault()
-  fetch(scripturl,{method: 'POST', body: new FormData(form)})
-  .then(response =>  modal.classList.remove('hide'),
-  modal.classList.add('show'))
-  .catch(error => alert(error))
-})
-const btnclose=()=>{
-  modal.classList.remove('show');
-  modal.classList.add('hide');
-  window.location.reload();
-}
