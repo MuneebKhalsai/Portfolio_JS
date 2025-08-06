@@ -301,26 +301,46 @@
       <!-- ========================================================
     -------------------------Contact Section Start-----------------
     ======================================================== -->
-      <!-- <section class="contact" id="contact">
-        <p>Contact Me</p>
-        <form name="contact-form" method="post" action="" class="contact-form">
-            <input  type="text" placeholder="Enter Your Name" class="input-fields" name="username" required/>
-            <input type="text" placeholder="Enter Your Email" class="input-fields" name="email" required/><br>
-            <textarea name="message" id="" placeholder="Enter Your Message" class="textarea-field" required></textarea
-            ><br />
-            <input class="submitbtn" type="submit" value="submit" />
-        </form>
-      </section> -->
 
-      <div class="contact-form-container">
+
+<div class="contact-form-container">
   <h2>Contact Me</h2>
-  <form name="contact-form">
-    <input type="text" class="input-fields" name="name" placeholder="Your Name" required />
-    <input type="email" class="input-fields" name="email" placeholder="Your Email" required />
-    <textarea class="textarea-field" name="message" placeholder="Your Message" rows="5" required></textarea>
+  <form action="https://api.web3forms.com/submit" method="POST">
+    
+    <!-- Your Access Key -->
+    <input type="hidden" name="access_key" value="ecf10217-b9cd-4340-b9f3-2cd03ee3c751" />
+
+    <!-- User Input Fields -->
+    <input
+      type="text"
+      class="input-fields"
+      name="name"
+      placeholder="Your Name"
+      required
+    />
+    <input
+      type="email"
+      class="input-fields"
+      name="email"
+      placeholder="Your Email"
+      required
+    />
+    <textarea
+      class="textarea-field"
+      name="message"
+      placeholder="Your Message"
+      rows="5"
+      required
+    ></textarea>
+
+  
+
+    <!-- Submit Button -->
     <button type="submit" class="submit-btn">Send Message</button>
   </form>
 </div>
+
+
 
 
     </main>
@@ -342,8 +362,18 @@
               > </span
             ></p></div>
             <br>
-          <a href="https://www.facebook.com/muneeb.khalsai"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/khalsai_muneeb_?igsh=bTA5aDBncDhzZ2dq"><i class="fa-brands fa-instagram"></i></a>
+
+            <a
+              href="mailto:muneeb.akhlaq05@gmail.com"
+              class="home-social-icon"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+
+            <a href="https://wa.me/923233772375"
+              class="home-social-icon"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+
             <a
               href="https://github.com/MuneebKhalsai"
               class="home-social-icon"
