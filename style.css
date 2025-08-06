@@ -470,7 +470,7 @@ margin-top: 10px;
   height: 180px;
   object-fit: cover;
   border-bottom: 1px solid #eee;
-  filter: grayscale(100%);
+  filter: grayscale(0%);
   transition: filter 0.4s ease;
 }
 
@@ -578,6 +578,7 @@ footer .footer-section {
   align-items: baseline;
   padding-top: 15px;
 }
+
 .footer-section .f-logo p {
   font-size: 30px;
   font-weight: 500;
@@ -590,6 +591,8 @@ footer .footer-section {
   color: black;
   padding-top: 5px;
 }
+
+
 
 .f-icons a {
   background-color: #2B86A0;
